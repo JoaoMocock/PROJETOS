@@ -1,0 +1,12 @@
+:root { color-scheme: light dark; font-family: Inter, Arial, sans-serif; }
+body { margin: 0; background: #0b1020; color: #e2e8f0; }
+.app { display: grid; grid-template-columns: 260px 1fr; min-height: 100vh; }
+.menu-lateral { padding: 1.2rem; border-right: 1px solid #1e293b; background: #0f172a; }
+.menu-lateral nav { display: grid; gap: .5rem; }
+.menu-lateral a { color: #cbd5e1; text-decoration: none; padding: .4rem .5rem; border-radius: .5rem; }
+.menu-lateral a:hover { background: #1e293b; }
+.conteudo { padding: 1.5rem; }
+.grade-cards { display:grid; grid-template-columns: repeat(auto-fit,minmax(180px,1fr)); gap:1rem; }
+.grade-graficos { display:grid; grid-template-columns: repeat(auto-fit,minmax(320px,1fr)); gap:1rem; margin-top:1rem; }
+.card { background:#111827; border:1px solid #1f2937; border-radius:.8rem; padding:1rem; }
+@media (max-width: 800px){ .app { grid-template-columns: 1fr; } .menu-lateral{position:sticky; top:0; z-index:10;} }
